@@ -5,6 +5,9 @@
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <Description>bash the drum. to the beat.</Description>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <OutputPath>..\..\SimpleOsuPerformanceCalculator\bin\$(Configuration)</OutputPath>
+  </PropertyGroup>
   <ItemGroup>
     <EmbeddedResource Remove="Resources\" />
   </ItemGroup>

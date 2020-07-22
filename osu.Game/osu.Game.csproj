@@ -11,6 +11,9 @@
     <PackageIcon>icon.png</PackageIcon>
     <IsPackable>true</IsPackable>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <OutputPath>..\..\SimpleOsuPerformanceCalculator\bin\$(Configuration)</OutputPath>
+  </PropertyGroup>
   <ItemGroup Label="Icon">
     <None Include="..\assets\lazer-nuget.png">
       <Pack>True</Pack>
